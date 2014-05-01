@@ -22,6 +22,7 @@
 		A9362BF81912232B00AAB9E0 /* ALViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9362BF71912232B00AAB9E0 /* ALViewController.m */; };
 		A9362BFC1912241000AAB9E0 /* ALChooserViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A9362BFB1912241000AAB9E0 /* ALChooserViewController.m */; };
 		A9362BFF1912281B00AAB9E0 /* ResizingImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = A9362BFE1912281B00AAB9E0 /* ResizingImageView.m */; };
+		A9362C0419122E4600AAB9E0 /* heisenberg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = A9362C0319122E4600AAB9E0 /* heisenberg.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,7 @@
 		A9362BFB1912241000AAB9E0 /* ALChooserViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ALChooserViewController.m; path = AL_Simple/ViewController/ALChooserViewController.m; sourceTree = "<group>"; };
 		A9362BFD1912281B00AAB9E0 /* ResizingImageView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ResizingImageView.h; path = AL_Simple/View/ResizingImageView.h; sourceTree = "<group>"; };
 		A9362BFE1912281B00AAB9E0 /* ResizingImageView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ResizingImageView.m; path = AL_Simple/View/ResizingImageView.m; sourceTree = "<group>"; };
+		A9362C0319122E4600AAB9E0 /* heisenberg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = heisenberg.jpg; path = Images/heisenberg.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -121,6 +123,7 @@
 				A9362BD6191222B600AAB9E0 /* MMJAppDelegate.h */,
 				A9362BD7191222B600AAB9E0 /* MMJAppDelegate.m */,
 				A9362BD9191222B600AAB9E0 /* Images.xcassets */,
+				A9362C0519122E4900AAB9E0 /* Images */,
 				A9362BCE191222B600AAB9E0 /* Supporting Files */,
 			);
 			path = AL_Simple;
@@ -175,6 +178,14 @@
 			);
 			name = Views;
 			path = ..;
+			sourceTree = "<group>";
+		};
+		A9362C0519122E4900AAB9E0 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				A9362C0319122E4600AAB9E0 /* heisenberg.jpg */,
+			);
+			name = Images;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -253,6 +264,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A9362C0419122E4600AAB9E0 /* heisenberg.jpg in Resources */,
 				A9362BD2191222B600AAB9E0 /* InfoPlist.strings in Resources */,
 				A9362BDA191222B600AAB9E0 /* Images.xcassets in Resources */,
 			);

@@ -10,4 +10,12 @@
 
 @interface ResizingImageView : UIView
 
+@property (nonatomic, strong) UIButton *bottomLeftButton;
+@property (nonatomic, strong) UIButton *bottomRightButton;
+
+@property (nonatomic) CGFloat topOffset;
+@property (nonatomic) CGFloat bottomOffset;
+
++ (instancetype)viewWithTopOffset:(CGFloat)topOffset bottomOffset:(CGFloat)bottomOffset;
+
 @end
