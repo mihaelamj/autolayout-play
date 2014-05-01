@@ -40,7 +40,7 @@
                                                                              constant:100];
     constraintImageWidth.priority = 300;
     
-    //image widyh
+    //image width
     NSLayoutConstraint *constraintImageHeight = [NSLayoutConstraint constraintWithItem:self.imageView
                                                                              attribute:NSLayoutAttributeHeight
                                                                              relatedBy:NSLayoutRelationEqual
@@ -69,14 +69,14 @@
                                                                           multiplier:1.0f
                                                                             constant:0];
     
-    //    //put cancelButton 10px below imageView
+    //   enlargeButton 10 above bottom
     NSLayoutConstraint *constraintCancelTop = [NSLayoutConstraint constraintWithItem:self.enlargeButton
-                                                                           attribute:NSLayoutAttributeTop
+                                                                           attribute:NSLayoutAttributeBottom
                                                                            relatedBy:NSLayoutRelationEqual
-                                                                              toItem:self.imageView
+                                                                              toItem:self
                                                                            attribute:NSLayoutAttributeBottom
                                                                           multiplier:1.0f
-                                                                            constant:10];
+                                                                            constant:-10];
     
     //put editButton top as cancel
     NSLayoutConstraint *constraintEditTop = [NSLayoutConstraint constraintWithItem:self.shrinkButton
@@ -87,25 +87,9 @@
                                                                         multiplier:1.0f
                                                                           constant:0];
     
-    //put cancelButton 10px above bottom
-    //    NSLayoutConstraint *constraintCancelBottom = [NSLayoutConstraint constraintWithItem:self.cancelButton
-    //                                                                           attribute:NSLayoutAttributeBottom
-    //                                                                           relatedBy:NSLayoutRelationEqual
-    //                                                                              toItem:self
-    //                                                                           attribute:NSLayoutAttributeBottom
-    //                                                                          multiplier:1.0f
-    //                                                                            constant:-10];
-    //
-    //    //put editButton top as cancel
-    //    NSLayoutConstraint *constraintEditBottom = [NSLayoutConstraint constraintWithItem:self.editButton
-    //                                                                         attribute:NSLayoutAttributeBottom
-    //                                                                         relatedBy:NSLayoutRelationEqual
-    //                                                                            toItem:self.cancelButton
-    //                                                                         attribute:NSLayoutAttributeBottom
-    //                                                                        multiplier:1.0f
-    //                                                                          constant:0];
+
     
-    //put editButton left as imageView
+    //put shrink Button left as imageView
     NSLayoutConstraint *constraintEditLeft = [NSLayoutConstraint constraintWithItem:self.shrinkButton
                                                                           attribute:NSLayoutAttributeLeft
                                                                           relatedBy:NSLayoutRelationEqual
@@ -114,7 +98,7 @@
                                                                          multiplier:1.0f
                                                                            constant:0];
     
-    //put editButton left as imageView
+    
     NSLayoutConstraint *constraintEditWidth= [NSLayoutConstraint constraintWithItem:self.shrinkButton
                                                                           attribute:NSLayoutAttributeWidth
                                                                           relatedBy:NSLayoutRelationGreaterThanOrEqual
